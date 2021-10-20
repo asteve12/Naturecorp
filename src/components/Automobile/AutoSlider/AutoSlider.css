@@ -1,0 +1,47 @@
+.AutoSliderWrapper {
+  height: auto;
+  width: 100%;
+}
+
+.each-fade-auto {
+  display: flex;
+  width: 100%;
+}
+
+.each-fade-auto > div {
+  width: 100%;
+  height: 450px;
+}
+
+.each-fade-auto > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pageDetail {
+  width: 100%;
+  height: 125px;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pageDetail h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.pageDetail p {
+  font-size: 18px;
+}
+@media (max-width: 500px) {
+  .pageDetail h1 {
+    font-size: 30px;
+  }
+  .pageDetail p {
+    font-size: 12px;
+  }
+}

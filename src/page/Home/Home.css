@@ -1,0 +1,287 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.closeDropDown {
+  color: grey;
+  font-size: 30px;
+  display: none;
+  justify-content: flex-end;
+}
+
+.sliderWrapper {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+/* .react-slideshow-fade-images-wrap {
+  width: 100% !important;
+  padding: 0px !important;
+  margin: 0px !important;
+} */
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  object-fit: cover !important;
+  max-height: 100vh !important;
+  min-height: 100vh;
+  /* min-width: 100%; */
+}
+.wrapper {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  color: white;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  /* justify-content: flex-end; */
+  padding-top: 20px;
+
+  align-items: center;
+}
+.menuItemsWrapper {
+  position: absolute;
+  display: flex;
+  right: 0%;
+  justify-content: space-around;
+
+  width: 60%;
+}
+
+.menuItemsWrapper h1 {
+  font-size: 20px;
+}
+.menuItemsWrapper a {
+  text-decoration: none;
+  color: white;
+}
+.menuItemsWrapper p {
+  font-size: 12px;
+}
+.menuItemsWrapper a p:hover {
+  border-bottom: solid 2px white;
+  padding-bottom: 5px;
+}
+.sideBtn {
+  min-width: 15%;
+  height: 89px;
+  background-color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 3px 6px #00000029;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  cursor: pointer;
+  color: grey;
+  transition: all 2s ease-in-out;
+}
+.sideBtn:hover .menuHover {
+  display: none;
+}
+.menuReal {
+  display: none;
+}
+
+.sideBtn:hover .menuReal {
+  display: block;
+  transition: all 2s linear;
+}
+
+.menuHover,
+.menuReal {
+  font-size: 30px;
+  margin-right: 28px;
+  color: grey;
+  transition: all 2s linear;
+}
+.DropDown {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  bottom: 0px;
+  padding-top: 100px;
+  display: flex;
+  color: white;
+}
+.DropDownHide {
+  display: none;
+}
+
+.TextContainer {
+  position: absolute;
+  z-index: 100;
+  left: 5%;
+  top: 20%;
+  width: auto;
+  color: transparent;
+  text-decoration: solid;
+  font-size: 40px;
+}
+.TextContainer h1 {
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(189, 189, 189);
+}
+.closeBtn {
+  display: none;
+  transition: all 5s ease-in-out;
+}
+.hideCloseBtn {
+  display: flex;
+  font-size: 40px;
+  width: 150px;
+
+  text-align: center;
+  transition: all 6s ease-in-out;
+}
+.each-fade {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.each-fade > div {
+  width: 100%;
+  height: 100vh;
+  padding: 0px !important;
+}
+
+.each-fade > div img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .TextContainer h1 {
+    font-size: 80px;
+  }
+}
+
+.mobileItems {
+  display: none;
+}
+.SlideImageContainer {
+  width: 100%;
+  height: 100vh;
+}
+.SliderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .each-fade p {
+  width: 25%;
+  font-size: 1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+} */
+
+/* .mobileCloseCont {
+  font-size: 20px;
+  width: 100%;
+  display: block;
+  justify-content: flex-end;
+  height: auto;
+} */
+
+@media (max-width: 1060px) {
+  .wrapper {
+    min-height: 100vh;
+  }
+  .sideBtn {
+    width: 150px;
+  }
+  .closeDropDown {
+    display: flex;
+  }
+}
+@media (max-width: 550px) {
+  .MenuContainer {
+    padding-top: 30px;
+  }
+  .DropDown {
+    padding-top: 0px;
+  }
+  .TextContainer h1 {
+    font-size: 50px !important;
+  }
+  .menuItemsWrapper {
+    /* flex-direction: column;
+    align-items: center; */
+    display: none;
+  }
+  .mobileItems {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .mobileItems a {
+    text-decoration: none;
+    color: grey;
+  }
+  .ServiceText {
+    display: none;
+  }
+  .sideBtn {
+    width: 50px;
+  }
+  .wrapper {
+    /* display: flex; */
+    justify-content: space-between;
+  }
+  .menu {
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 550px) {
+  .companyName {
+    display: none;
+  }
+  .DropDown {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 300px) {
+  .TextContainer h1 {
+    font-size: 30px !important;
+  }
+  .react-slideshow-fade-images-wrap {
+    min-width: 100%;
+    height: 100%;
+  }
+}
+.sliderWrapperHome {
+  width: 100%;
+  height: 100vh;
+}
+/* .swift-slider-prev-btn:before {
+  content: '<';
+  color: white;
+  background-color: white;
+} */
+.react-slideshow-fade-images-wrap {
+  width: 100%;
+  padding: 0px;
+
+  display: none;
+}
+
+.reactSliderWrapper {
+  width: 100%;
+  height: 100%;
+}

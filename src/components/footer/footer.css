@@ -1,0 +1,33 @@
+.footerComponent {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: rgb(240, 229, 229);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 50px;
+}
+.followSection {
+  color: white;
+}
+.IconWrapper {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #357106;
+}
+.IconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 10px;
+}
+.IconsContainer {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,100 @@
+.AboutSection {
+  width: 100%;
+  height: 100vh;
+
+  /* filter: blur(5px); */
+  background-size: cover;
+  position: relative;
+}
+.AboutWrapper {
+  height: 100%;
+  width: 100%;
+
+  background-color: black;
+
+  opacity: 0.75;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.AboutWrapper p {
+  color: white;
+  font-family: inherit;
+  font: normal normal normal Poppins;
+  font-size: 50px;
+}
+.AboutWrapper p.welcomeText {
+  padding-top: 30px;
+  width: auto;
+}
+.AboutBorder {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top: solid 5px white;
+  width: 14%;
+}
+.AboutText {
+  width: 80%;
+  height: auto;
+}
+.AboutInfo {
+  font-size: 22px !important;
+  width: 100%;
+}
+
+.AboutSection::before {
+  content: 'gfgfgfgg';
+  position: absolute;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+
+  /* left: -1%;
+  right: -1%;
+  top: -1%;
+  bottom: -1%;
+  z-index: -1; */
+
+  display: block;
+  background: url(../../assets/about/aboutsm.png);
+
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.AboutSend {
+  padding: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .AboutSection {
+    height: auto !important;
+    width: 100%;
+    min-height: auto;
+  }
+  .AboutSection:before {
+    height: 100%;
+  }
+  .AboutSend {
+    font-size: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .welcomeText {
+    font-size: 30px !important;
+  }
+  .AboutText p {
+    font-size: 0px;
+  }
+}

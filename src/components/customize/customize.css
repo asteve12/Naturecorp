@@ -1,0 +1,49 @@
+.customViewSection {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.CustomizeSection {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.CustomizeOutput {
+  width: 70%;
+  height: 100;
+  background-color: #f1f1f1;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.CustomizeHeader {
+  font-size: 36px;
+  font-weight: normal;
+  border-bottom: solid 2px black;
+}
+.CustomizeOutputHeader {
+  font-size: 36px;
+  font-weight: normal;
+  border-bottom: solid 2px black;
+  width: 15%;
+}
+.carWrapper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  .CustomizeSection {
+    width: 100%;
+  }
+  .CustomizeOutput {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,60 @@
+.AutoClassCont {
+  height: 321px;
+  width: 200px;
+
+  border: solid 4px #000000;
+
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 1%;
+}
+
+.carsImage {
+  height: 60%;
+  width: 100%;
+
+  background-color: yellow;
+  top: -5px;
+  position: relative;
+}
+.carsImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carsDetail {
+  height: 40%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carPriceCont {
+  display: flex;
+  justify-content: space-between;
+
+  height: 40%;
+  width: 100%;
+
+  justify-self: flex-end;
+}
+
+.priceLetter {
+  background-color: black;
+  color: white;
+}
+.carDetailHeader h5 {
+  font-size: 18px;
+}
+.carDetailHeader p {
+  font-size: 10px;
+}
+.carPriceContHeader {
+  font-size: 18px;
+}
+.priceLetter {
+  font-size: 10px;
+}

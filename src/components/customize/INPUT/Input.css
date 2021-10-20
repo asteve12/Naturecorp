@@ -1,0 +1,13 @@
+.AutoLabel {
+  width: 50%;
+  font-size: 18px;
+}
+.autoOptions {
+  width: 100%;
+}
+.autoSelect {
+  width: 90%;
+  height: 52px;
+  box-sizing: border-box;
+  padding: 10px;
+}
