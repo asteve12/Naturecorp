@@ -47,7 +47,7 @@
 }
 
 .AboutSection::before {
-  content: 'gfgfgfgg';
+  content: '';
   position: absolute;
   text-align: center;
   font-size: 100px;
