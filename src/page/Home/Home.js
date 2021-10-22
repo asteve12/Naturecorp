@@ -22,14 +22,21 @@ import { Link } from 'react-router-dom';
 //context
 import HomeContext from './context';
 
+//compression library
+// import imageCompression from 'browser-image-compression';
+
 //styles
 import './Home.css';
 import About from '../../components/About/About';
 import Footer from '../footer/footer';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+//axios
+import axios from 'axios';
 //minified images
-import minified_500 from '../../assets/sliderImg/minified/1000/carlg-min.png';
+import carlg from '../../assets/sliderImg/minified/1000/carlg-min.png';
+import carsm from '../../assets/sliderImg/minified/500/carsm-min.jpg';
 
 const settings = {
   dots: true,
@@ -62,7 +69,8 @@ const settings = {
 //     thumbnail: 'http://lorempixel.com/250/150/nature/3/',
 //   },
 // ];
-const data = [car, crypto, peoplelg, Houselg, stocklg];
+const data = [carlg, crypto, peoplelg, Houselg, stocklg];
+const small = [carsm];
 // const data = [
 //   {
 //     id: '1',
@@ -121,6 +129,47 @@ export default class Home extends Component {
       }
     });
   };
+
+  // handleCompressImage = (image) => {
+  //   console.log('the current page', window.location.host + image);
+
+  //   var imageFile = axios
+  //     .get(
+  //       'https://i.pinimg.com/236x/08/4b/0f/084b0fb6888b14ac32545b500fd80b1c--rayban-bruno.jpg'
+  //     )
+  //     .then(function (response) {
+  //       console.log('axios response', response);
+  //       // return response.blob();
+  //     })
+  //     .catch((error) => {
+  //       console.log('path error', error);
+  //     });
+  //   // console.log(imageFile);
+  //   console.log('originalFile instanceof Blob', imageFile instanceof Blob); // true
+  //   console.log(`originalFile size ${imageFile.size / 1024 / 1024} MB`);
+
+  //   var options = {
+  //     maxSizeMB: 1,
+  //     maxWidthOrHeight: 1920,
+  //     useWebWorker: true,
+  //   };
+  //   imageCompression(image, options)
+  //     .then(function (compressedFile) {
+  //       console.log(
+  //         'compressedFile instanceof Blob',
+  //         compressedFile instanceof Blob
+  //       ); // true
+  //       console.log(
+  //         `compressedFile size ${compressedFile.size / 1024 / 1024} MB`
+  //       ); // smaller than maxSizeMB
+  //       console.log('compressedImage', compressedFile);
+  //       return compressedFile; // write your own logic
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error.message);
+  //     });
+  // };
+
   render() {
     return (
       <HomeContext.Provider
@@ -197,7 +246,8 @@ export default class Home extends Component {
             <Fade onChange={this.textChangeHandler} duration={1000}>
               <div className='each-fade'>
                 <div>
-                  <img src={data[0]} />
+                  {/* <img src={data[0]} /> */}
+                  <img srcset={`${small[0]} 500w,${data[0]} 1000w, `} alt='' />
                 </div>
               </div>
               <div className='each-fade'>
