@@ -6,11 +6,11 @@ import 'react-slideshow-image/dist/styles.css';
 // import Slider from 'react-slick';
 // import 'react-image-gallery/styles/css/image-gallery.css';
 //images
-import car from '../../assets/sliderImg/carlg.png';
-import crypto from '../../assets/sliderImg/crylg.png';
-import peoplelg from '../../assets/sliderImg/peoplelg.png';
-import Houselg from '../../assets/sliderImg/Houselg.png';
-import stocklg from '../../assets/sliderImg/stocklg.png';
+import car from '../../assets/sliderImg/carsm.png';
+import crypto from '../../assets/sliderImg/crpsm.png';
+import peoplelg from '../../assets/sliderImg/peoplesm.png';
+import Houselg from '../../assets/sliderImg/housesm.png';
+import stocklg from '../../assets/sliderImg/stocksm.png';
 //import icons
 import { CgMenuRight, CgMenu } from 'react-icons/cg';
 import { GrFormClose } from 'react-icons/gr';
@@ -62,7 +62,7 @@ const settings = {
 //     thumbnail: 'http://lorempixel.com/250/150/nature/3/',
 //   },
 // ];
-const data = [minified_500, crypto, peoplelg, Houselg, stocklg];
+const data = [car, crypto, peoplelg, Houselg, stocklg];
 // const data = [
 //   {
 //     id: '1',
