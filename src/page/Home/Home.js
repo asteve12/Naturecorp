@@ -28,6 +28,8 @@ import About from '../../components/About/About';
 import Footer from '../footer/footer';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+//minified images
+import minified_500 from '../../assets/sliderImg/minified/1000/carlg-min.png';
 
 const settings = {
   dots: true,
@@ -60,7 +62,7 @@ const settings = {
 //     thumbnail: 'http://lorempixel.com/250/150/nature/3/',
 //   },
 // ];
-const data = [car, crypto, peoplelg, Houselg, stocklg];
+const data = [minified_500, crypto, peoplelg, Houselg, stocklg];
 // const data = [
 //   {
 //     id: '1',
