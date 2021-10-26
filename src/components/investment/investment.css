@@ -417,11 +417,11 @@
   font-size: 15px;
 }
 
-@media (min-width: 1084px) {
+/* @media (min-width: 1084px) {
   .carText:before {
     height: 200px;
   }
-}
+} */
 @media (max-width: 850px) {
   .Automobile {
     width: 100%;
@@ -477,6 +477,12 @@
     height: 50px;
   }
   .InvestHouse {
+    height: 500px;
+  }
+  .Automobile {
+    height: 500px;
+  }
+  .smileImg {
     height: 500px;
   }
 }
