@@ -1,24 +1,23 @@
 .investment {
   width: 100%;
   height: auto;
-  background-color: yellow;
 }
 
-.imageText {
+/* .imageText {
   background-color: black;
-}
+} */
 .InvestmentHeader {
   width: auto;
   display: flex;
   justify-content: center;
   height: auto;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .InvestmentBtn {
   width: 400px;
   height: 143px;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   font-size: 50px;
   cursor: pointer;
