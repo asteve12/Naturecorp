@@ -76,6 +76,7 @@
   padding: 15px;
   font-size: 22px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 @media (max-width: 700px) {
   .AboutSection {
@@ -96,5 +97,23 @@
   }
   .AboutText p {
     font-size: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .welcomeText {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .welcomeText,
+  .AboutInfo {
+    font-size: 15px !important;
+  }
+  .AboutSend {
+    font-size: 12px !important;
+  }
+  .AboutText p {
+    font-size: 15px;
   }
 }

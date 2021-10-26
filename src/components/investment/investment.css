@@ -472,4 +472,11 @@
     text-align: center;
     margin-left: 10px;
   }
+  .InvestmentBtn,
+  .InvestmentOther {
+    height: 50px;
+  }
+  .InvestHouse {
+    height: 500px;
+  }
 }
