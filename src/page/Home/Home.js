@@ -247,7 +247,7 @@ export default class Home extends Component {
               <div className='each-fade'>
                 <div>
                   {/* <img src={data[0]} /> */}
-                  <img srcset={`${small[0]} 500w,${data[0]} 1000w, `} alt='' />
+                  <img srcset={`${small[0]} 500w ,${data[0]} 1000w, `} alt='' />
                 </div>
               </div>
               <div className='each-fade'>
