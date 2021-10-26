@@ -44,7 +44,6 @@
 .Automobile {
   width: 50%;
 
-  background-color: green;
   height: 700px;
   position: relative;
   cursor: pointer;
@@ -57,7 +56,6 @@
 .InvestHouse {
   width: 50%;
 
-  background-color: green;
   height: 700px;
   position: relative;
   cursor: pointer;
@@ -68,7 +66,7 @@
 }
 .InvestCrypto {
   width: 50%;
-  background-color: red;
+
   height: 500px;
 }
 .investHouseText {
@@ -131,7 +129,7 @@
 }
 .cryptoBox {
   height: 350px;
-  background-color: blue;
+
   width: 100%;
   background-image: url(../../assets/sliderImg/crpsm.png);
 
@@ -142,7 +140,7 @@
 }
 .stockBox {
   height: 350px;
-  background-color: red;
+
   width: 100%;
 
   background-image: url(../../assets/category/stocklg.png);
