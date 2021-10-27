@@ -457,32 +457,61 @@
   .InvestmentOther {
     font-size: 25px;
   }
-  .cryptoText {
-    font-size: 30px;
+  .cryptoTextCont {
+    height: 70px;
+  }
+  .carText,
+  .smileText {
+    font-size: 25px;
     text-align: center;
-    margin-left: 10px;
+    /* margin-left: 5px;
+    margin-top: 5px; */
+    height: 70px;
+  }
+  .cryptoText {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .stockText {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .stockTextCont {
+    height: 70px;
   }
   .investHouseText {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin-top: 50px;
+    height: 70px;
   }
   .stockTextHeader {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin-left: 10px;
+    margin-top: 5px;
   }
   .InvestmentBtn,
   .InvestmentOther {
     height: 50px;
   }
   .InvestHouse {
-    height: 200px;
+    height: 250px;
+  }
+  .cryptoBox {
+    height: 250px;
   }
   .Automobile {
-    height: 200px;
+    height: 250px;
+  }
+  .stockBox {
+    height: 250px;
   }
   .smileImg {
-    height: 200px;
+    height: 250px;
   }
 }
