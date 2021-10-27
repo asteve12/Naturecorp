@@ -71,6 +71,64 @@ function investment(props) {
             </p>
           </div>
         </div>
+        {/* real Estate mobile section*/}
+        <div
+          className='InvestHouseResponsive'
+          // onMouseEnter={props.HoverHouse}
+          // onMouseLeave={props.mouseLeave}
+        >
+          <div
+            className={
+              props.onHoverHouse
+                ? 'investHouseTextResponsive onHoverinvestHouseText'
+                : 'investHouseTextResponsive'
+            }
+          >
+            <p className='RealEstate'>
+              Real Estate
+              <button
+                className='cryptoTextBtn'
+                href=''
+                onClick={(e) => {
+                  e.preventDefault();
+                  props.showRealEstateDown();
+                }}
+              >
+                {props.showRealEstate ? 'close' : 'more'}
+              </button>
+              {props.onHoverHouse ? (
+                <>
+                  <p className='AboutText'>
+                    As an investor we believe you should have easy access to
+                    high quality real esatate
+                  </p>
+
+                  <p className='AboutText'>
+                    we make it easy,convenient and fast for you to invest in
+                    high curated commercial real estate
+                  </p>
+
+                  <p className='AboutText'>
+                    As a member of our marketplace,you have instant access to
+                    view all properties that we offer and can obtain fractional
+                    ownership quickly with our experienced team and
+                    technology-driven process
+                  </p>
+                </>
+              ) : null}
+            </p>
+          </div>
+        </div>
+        {/*End of Estate Mobile section*/}
+        {/*Realestate dropdown Section*/}
+        <div
+          className={
+            props.showRealEstate
+              ? 'RealEstateMobile'
+              : 'noDisplayRealEstateMobile'
+          }
+        ></div>
+        {/*EndRealestate dropdown Section*/}
         <div className='InvestCrypto'>
           <div
             className='cryptoBox'
@@ -95,6 +153,35 @@ function investment(props) {
               </p>
             </div>
           </div>
+          {/*crypto Box mobile section*/}
+          <div
+            className='cryptoBoxResponsive'
+            // onMouseEnter={props.cryptoHover}
+            // onMouseLeave={props.cryptoLeave}
+          >
+            <div
+              className={
+                props.onHoverCryptoBox
+                  ? 'cryptoTextContResponsive onHoverCrypto'
+                  : 'cryptoTextContResponsive'
+              }
+            >
+              <p className='cryptoText'>
+                Crypto Currency
+                <a className='cryptoTextBtn' href=''>
+                  more
+                </a>
+                {props.onHoverCryptoBox ? (
+                  <p className='AboutText'>
+                    As an investor we believe you should have easy access to
+                    high quality real esatate
+                  </p>
+                ) : null}
+              </p>
+            </div>
+          </div>
+          {/*Endcrypto Box mobile section*/}
+
           <div
             className='stockBox'
             onMouseEnter={props.realEstateHover}
@@ -128,6 +215,46 @@ function investment(props) {
               </div>
             </div>
           </div>
+          {/*stcockBox Responsive section*/}
+          <div
+            className='stockBoxResponsive'
+            // onMouseEnter={props.realEstateHover}
+            // onMouseLeave={props.realEstateLeave}
+          >
+            <div className='stockBoxResponsive'>
+              <div
+                className={
+                  props.onHoverRealEsate
+                    ? 'stockTextContResponsive onHoverStock'
+                    : 'stockTextContResponsive'
+                }
+              >
+                <p className='stockTextResponsive'>
+                  <p className='stockTextHeaderResponsive'>
+                    Stock Markets
+                    <a className='cryptoTextBtn' href=''>
+                      more
+                    </a>
+                  </p>
+
+                  {props.onHoverRealEsate ? (
+                    <>
+                      {' '}
+                      <p>
+                        We make it easy to have access to local and
+                        international stock markets .
+                      </p>
+                      <p>
+                        Making it easier for you to buy,sell and hold company
+                        shares
+                      </p>
+                    </>
+                  ) : null}
+                </p>
+              </div>
+            </div>
+          </div>
+          {/*end stcockBox Responsive section*/}
         </div>
       </div>
       {/*investment secton*/}
@@ -149,6 +276,29 @@ function investment(props) {
             </p>
           </div>
         </div>
+
+        {/*Automobile section*/}
+        <div
+          className='AutomobileResponsive'
+          onMouseEnter={props.carHover}
+          onMouseLeave={props.carLeave}
+        >
+          <div className={props.onHoverCar ? 'carText onCarHover' : 'carText'}>
+            <p className='RealEstate'>
+              Automobile
+              <a className='cryptoTextBtn' href=''>
+                more
+              </a>
+              {props.onHoverCar ? (
+                <p className='AutoMobileText'>
+                  We Provide you with durable and comfortable automobile to best
+                  suit your needs and budget.
+                </p>
+              ) : null}
+            </p>
+          </div>
+        </div>
+        {/*End Of Automobile section*/}
         <div
           className='smileImg'
           onMouseEnter={props.smileHover}
@@ -176,6 +326,38 @@ function investment(props) {
             </p>
           </div>
         </div>
+        {/*SmileResponsive*/}
+        <div
+          className='smileImgResponsive'
+          onMouseEnter={props.smileHover}
+          onMouseLeave={props.smileLeave}
+        >
+          <div
+            className={
+              props.onHoverSmile ? 'smileText onSmileHover' : 'smileText'
+            }
+          >
+            <p className='RealEstate'>
+              Helping Hands
+              <a className='cryptoTextBtn' href=''>
+                more
+              </a>
+              {props.onHoverSmile ? (
+                <>
+                  <p className='helpHandText'>
+                    We are passionate about lives. At naturecorp we believe
+                    every child has the right to live happily and to have their
+                    dreams come through
+                  </p>
+                  <p className='helpHandText'>
+                    you can support their dream by making donations
+                  </p>
+                </>
+              ) : null}
+            </p>
+          </div>
+        </div>
+        {/*EndSmileResponsive*/}
       </div>
     </div>
   );

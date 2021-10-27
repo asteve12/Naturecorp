@@ -256,7 +256,7 @@
 
 .smileImg {
   width: 50%;
-  background-color: red !important;
+  /* background-color: red !important; */
   height: 700px;
   z-index: 100;
   position: relative;
@@ -474,26 +474,29 @@
     margin-left: 5px;
     margin-top: 5px;
   }
-  .stockText {
-    font-size: 25px;
+  .stockTextResponsive {
+    font-size: 25px !important;
     text-align: center;
     margin-left: 5px;
     margin-top: 5px;
   }
-  .stockTextCont {
+  /* .stockTextContResponsive {
     height: 70px;
-  }
+  } */
   .investHouseText {
     font-size: 25px;
     text-align: center;
     margin-top: 50px;
     height: 70px;
   }
-  .stockTextHeader {
-    font-size: 25px;
-    text-align: center;
+  .stockTextHeaderResponsive {
+    font-size: 20px;
+    text-align: left;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 0px;
+    height: 100%;
+    color: white;
+    position: absolute;
   }
   .InvestmentBtn,
   .InvestmentOther {
@@ -513,5 +516,238 @@
   }
   .smileImg {
     height: 250px;
+  }
+  .InvestHouse {
+    display: none;
+  }
+  .InvestHouseResponsive {
+    width: 100%;
+
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    background: url(../../assets/category/realestatesm.png);
+
+    background-size: cover;
+  }
+  .cryptoBox {
+    display: none;
+  }
+  .cryptoBoxResponsive {
+    width: 100%;
+
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    background-image: url(../../assets/sliderImg/crpsm.png);
+
+    background-size: cover;
+  }
+  .cryptoTextBtn {
+    display: block;
+    text-align: left;
+  }
+  .stockBox {
+    display: none;
+  }
+  .stockBoxResponsive {
+    width: 100%;
+
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    background-image: url(../../assets/category/stocklg.png);
+
+    background-size: cover;
+  }
+  .Automobile {
+    display: none;
+  }
+  .AutomobileResponsive {
+    width: 100%;
+
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    background-image: url(../../assets/automobile/car.png);
+    background-size: cover;
+  }
+  .smileImg {
+    display: none;
+  }
+  .smileImgResponsive {
+    width: 100%;
+
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    background-image: url(../../assets/automobile/smile.png);
+    background-size: cover;
+  }
+  .RealEsateMore {
+    text-align: left;
+    color: black;
+  }
+  /* .stockTextResponsive {
+    width: 100%;
+    height: 143px;
+
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+  } */
+  .stockTextContResponsive {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+  }
+  .stockTextContResponsive:before {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    content: '';
+    position: absolute;
+    /* left: -1%;
+  right: -1%;
+  top: -1%;
+  bottom: -1%;
+  z-index: -1; */
+
+    display: block;
+    /* background */
+    /* background-color: grey; */
+
+    background-size: cover;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+
+    /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(128, 128, 128, 0.75);
+  }
+  .cryptoTextContResponsive {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+  }
+  .cryptoTextContResponsive:before {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    content: '';
+    position: absolute;
+    /* left: -1%;
+  right: -1%;
+  top: -1%;
+  bottom: -1%;
+  z-index: -1; */
+
+    display: block;
+    /* background */
+    /* background-color: grey; */
+
+    background-size: cover;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+
+    /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(128, 128, 128, 0.75);
+  }
+  .cryptoText {
+    font-size: 15px;
+  }
+
+  .investHouseTextResponsive {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+  }
+  .investHouseTextResponsive:before {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    content: '';
+    position: absolute;
+    /* left: -1%;
+  right: -1%;
+  top: -1%;
+  bottom: -1%;
+  z-index: -1; */
+
+    display: block;
+    /* background */
+    /* background-color: grey; */
+
+    background-size: cover;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+
+    /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(128, 128, 128, 0.75);
+  }
+  .RealEstate {
+    font-size: 15px;
+  }
+  .RealEstateMobile {
+    height: 300px;
+    transition: all 1s;
+  }
+  .noDisplayRealEstateMobile {
+    height: 0px;
+    display: none;
+    transition: all 1s;
+  }
+}
+
+@media (min-width: 450px) {
+  .stockTextResponsive {
+    display: none;
+  }
+  .stockTextHeaderResponsive {
+    display: none;
+  }
+  .cryptoTextBtn,
+  .cryptoTextContResponsive {
+    display: none;
   }
 }
