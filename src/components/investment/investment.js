@@ -411,7 +411,7 @@ function investment(props) {
                 : 'smileTextResponsive'
             }
           >
-            <p className='AboutTextResponsive'>
+            <p className='helpingMobileText'>
               Helping Hands
               <button className='cryptoTextBtn' onClick={props.showSmileDown}>
                 {props.showSmile ? 'less' : 'More'}

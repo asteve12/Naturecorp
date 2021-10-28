@@ -453,6 +453,12 @@
 }
 
 @media (max-width: 450px) {
+  .helpingMobileText {
+    font-size: 15px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
   .RealEstate {
     margin-top: 5px;
     margin-left: 5px;
