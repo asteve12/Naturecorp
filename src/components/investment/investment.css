@@ -453,6 +453,10 @@
 }
 
 @media (max-width: 450px) {
+  .RealEstate {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
   .InvestmentBtn,
   .InvestmentOther {
     font-size: 25px;
@@ -490,10 +494,10 @@
     height: 70px;
   }
   .stockTextHeaderResponsive {
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
-    margin-left: 10px;
-    margin-top: 0px;
+    margin-left: 5px;
+    margin-top: 5px;
     height: 100%;
     color: white;
     position: absolute;
@@ -548,6 +552,15 @@
   .cryptoTextBtn {
     display: block;
     text-align: left;
+    background-color: white;
+
+    outline: none;
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
   }
   .stockBox {
     display: none;
@@ -729,8 +742,12 @@
     font-size: 15px;
   }
   .RealEstateMobile {
-    height: 300px;
+    height: auto;
     transition: all 1s;
+    background-color: rgb(130, 129, 129);
+    color: white;
+    text-align: center;
+    padding: 10%;
   }
   .noDisplayRealEstateMobile {
     height: 0px;
@@ -748,6 +765,9 @@
   }
   .cryptoTextBtn,
   .cryptoTextContResponsive {
+    display: none;
+  }
+  .AboutTextResponsive {
     display: none;
   }
 }

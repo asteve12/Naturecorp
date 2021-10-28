@@ -94,7 +94,7 @@ function investment(props) {
                   props.showRealEstateDown();
                 }}
               >
-                {props.showRealEstate ? 'close' : 'more'}
+                {props.showRealEstate ? 'Less' : 'More'}
               </button>
               {props.onHoverHouse ? (
                 <>
@@ -127,7 +127,23 @@ function investment(props) {
               ? 'RealEstateMobile'
               : 'noDisplayRealEstateMobile'
           }
-        ></div>
+        >
+          <p className='AboutTextResponsive'>
+            As an investor we believe you should have easy access to high
+            quality real esatate
+          </p>
+
+          <p className='AboutTextResponsive'>
+            we make it easy,convenient and fast for you to invest in high
+            curated commercial real estate
+          </p>
+
+          <p className='AboutTextResponsive'>
+            As a member of our marketplace,you have instant access to view all
+            properties that we offer and can obtain fractional ownership quickly
+            with our experienced team and technology-driven process
+          </p>
+        </div>
         {/*EndRealestate dropdown Section*/}
         <div className='InvestCrypto'>
           <div
@@ -168,9 +184,12 @@ function investment(props) {
             >
               <p className='cryptoText'>
                 Crypto Currency
-                <a className='cryptoTextBtn' href=''>
-                  more
-                </a>
+                <button
+                  className='cryptoTextBtn'
+                  onClick={props.showCryptoDowm}
+                >
+                  {props.showCrypto ? 'less' : 'More'}
+                </button>
                 {props.onHoverCryptoBox ? (
                   <p className='AboutText'>
                     As an investor we believe you should have easy access to
@@ -181,6 +200,20 @@ function investment(props) {
             </div>
           </div>
           {/*Endcrypto Box mobile section*/}
+          {/*crypto dropdown*/}
+          <div
+            className={
+              props.showCrypto
+                ? 'RealEstateMobile'
+                : 'noDisplayRealEstateMobile'
+            }
+          >
+            <p className='AboutTextResponsive'>
+              As an investor we believe you should have easy access to high
+              quality real esatate
+            </p>
+          </div>
+          {/*crypto dropdown Section*/}
 
           <div
             className='stockBox'
@@ -232,9 +265,12 @@ function investment(props) {
                 <p className='stockTextResponsive'>
                   <p className='stockTextHeaderResponsive'>
                     Stock Markets
-                    <a className='cryptoTextBtn' href=''>
-                      more
-                    </a>
+                    <button
+                      className='cryptoTextBtn'
+                      onClick={props.showStockDowm}
+                    >
+                      {props.showStock ? 'less' : 'More'}
+                    </button>
                   </p>
 
                   {props.onHoverRealEsate ? (
@@ -255,6 +291,21 @@ function investment(props) {
             </div>
           </div>
           {/*end stcockBox Responsive section*/}
+          {/*crypto dropdown*/}
+          <div
+            className={
+              props.showStock ? 'RealEstateMobile' : 'noDisplayRealEstateMobile'
+            }
+          >
+            <p className='AboutTextResponsive'>
+              We make it easy to have access to local and international stock
+              markets .
+            </p>
+            <p className='AboutTextResponsive'>
+              Making it easier for you to buy,sell and hold company shares
+            </p>
+          </div>
+          {/*crypto dropdown Section*/}
         </div>
       </div>
       {/*investment secton*/}

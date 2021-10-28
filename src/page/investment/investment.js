@@ -13,6 +13,8 @@ export default class investment extends Component {
     onHoverCar: false,
     onHoverSmile: false,
     showRealEstate: false,
+    showCrypto: false,
+    showStock: false,
   };
   investmentHandler = () => {
     this.setState((prevState) => {
@@ -67,6 +69,16 @@ export default class investment extends Component {
       return { ...prevState, showRealEstate: !prevState.showRealEstate };
     });
   };
+  showCryptoDowm = () => {
+    this.setState((prevState) => {
+      return { ...prevState, showCrypto: !prevState.showCrypto };
+    });
+  };
+  showStockDowm = () => {
+    this.setState((prevState) => {
+      return { ...prevState, showStock: !prevState.showStock };
+    });
+  };
 
   render() {
     return (
@@ -85,6 +97,8 @@ export default class investment extends Component {
           smileHover={this.smileHoverHandler}
           smileLeave={this.smileLeaveHandler}
           showRealEstateDown={this.showRealEstateDown}
+          showCryptoDowm={this.showCryptoDowm}
+          showStockDowm={this.showStockDowm}
           {...this.state}
         ></InvestComp>
       </div>
