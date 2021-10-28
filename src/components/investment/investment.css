@@ -615,6 +615,46 @@
     bottom: 0px;
     font-size: 50px;
   } */
+  .carTextResponsive {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+  }
+  .carTextResponsive:before {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    content: '';
+    position: absolute;
+    /* left: -1%;
+  right: -1%;
+  top: -1%;
+  bottom: -1%;
+  z-index: -1; */
+
+    display: block;
+    /* background */
+    /* background-color: grey; */
+
+    background-size: cover;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+
+    /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(128, 128, 128, 0.75);
+  }
   .stockTextContResponsive {
     width: 100%;
     height: 50px;
@@ -624,6 +664,86 @@
     font-size: 50px;
   }
   .stockTextContResponsive:before {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    content: '';
+    position: absolute;
+    /* left: -1%;
+  right: -1%;
+  top: -1%;
+  bottom: -1%;
+  z-index: -1; */
+
+    display: block;
+    /* background */
+    /* background-color: grey; */
+
+    background-size: cover;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+
+    /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(128, 128, 128, 0.75);
+  }
+  .carTextResponsive {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+  }
+  .carTextResponsive:before {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    content: '';
+    position: absolute;
+    /* left: -1%;
+  right: -1%;
+  top: -1%;
+  bottom: -1%;
+  z-index: -1; */
+
+    display: block;
+    /* background */
+    /* background-color: grey; */
+
+    background-size: cover;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+
+    /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(128, 128, 128, 0.75);
+  }
+  .smileTextResponsive {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+  }
+  .smileTextResponsive:before {
     width: 100%;
     height: 100%;
 
@@ -758,6 +878,11 @@
 }
 
 @media (min-width: 450px) {
+  .smileTextResponsive,
+  .investHouseTextResponsive,
+  .carTextResponsive {
+    display: none;
+  }
   .stockTextResponsive {
     display: none;
   }

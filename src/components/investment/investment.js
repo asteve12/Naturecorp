@@ -328,18 +328,27 @@ function investment(props) {
           </div>
         </div>
 
-        {/*Automobile section*/}
+        {/*Automobile section Responsive*/}
         <div
           className='AutomobileResponsive'
-          onMouseEnter={props.carHover}
-          onMouseLeave={props.carLeave}
+          // onMouseEnter={props.carHover}
+          // onMouseLeave={props.carLeave}
         >
-          <div className={props.onHoverCar ? 'carText onCarHover' : 'carText'}>
+          <div
+            className={
+              props.onHoverCar
+                ? 'carTextResponsive onCarHover'
+                : 'carTextResponsive'
+            }
+          >
             <p className='RealEstate'>
               Automobile
-              <a className='cryptoTextBtn' href=''>
-                more
-              </a>
+              <button
+                className='cryptoTextBtn'
+                onClick={props.showAutomobileDown}
+              >
+                {props.showAuto ? 'less' : 'More'}
+              </button>
               {props.onHoverCar ? (
                 <p className='AutoMobileText'>
                   We Provide you with durable and comfortable automobile to best
@@ -349,7 +358,19 @@ function investment(props) {
             </p>
           </div>
         </div>
-        {/*End Of Automobile section*/}
+        {/*End Of Automobile Responsive section*/}
+        {/*Auto dropdown*/}
+        <div
+          className={
+            props.showAuto ? 'RealEstateMobile' : 'noDisplayRealEstateMobile'
+          }
+        >
+          <p className='AboutTextResponsive'>
+            We Provide you with durable and comfortable automobile to best suit
+            your needs and budget.
+          </p>
+        </div>
+        {/*end Auto dropdown*/}
         <div
           className='smileImg'
           onMouseEnter={props.smileHover}
@@ -380,19 +401,21 @@ function investment(props) {
         {/*SmileResponsive*/}
         <div
           className='smileImgResponsive'
-          onMouseEnter={props.smileHover}
-          onMouseLeave={props.smileLeave}
+          // onMouseEnter={props.smileHover}
+          // onMouseLeave={props.smileLeave}
         >
           <div
             className={
-              props.onHoverSmile ? 'smileText onSmileHover' : 'smileText'
+              props.onHoverSmile
+                ? 'smileTextResponsive onSmileHover'
+                : 'smileTextResponsive'
             }
           >
-            <p className='RealEstate'>
+            <p className='AboutTextResponsive'>
               Helping Hands
-              <a className='cryptoTextBtn' href=''>
-                more
-              </a>
+              <button className='cryptoTextBtn' onClick={props.showSmileDown}>
+                {props.showSmile ? 'less' : 'More'}
+              </button>
               {props.onHoverSmile ? (
                 <>
                   <p className='helpHandText'>
@@ -409,6 +432,21 @@ function investment(props) {
           </div>
         </div>
         {/*EndSmileResponsive*/}
+        {/*smile dropdown*/}
+        <div
+          className={
+            props.showSmile ? 'RealEstateMobile' : 'noDisplayRealEstateMobile'
+          }
+        >
+          <p className='AboutTextResponsive'>
+            We are passionate about lives. At naturecorp we believe every child
+            has the right to live happily and to have their dreams come through
+          </p>
+          <p className='AboutTextResponsive'>
+            you can support their dream by making donations
+          </p>
+        </div>
+        {/*end Auto dropdown*/}
       </div>
     </div>
   );

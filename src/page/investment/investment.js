@@ -15,6 +15,8 @@ export default class investment extends Component {
     showRealEstate: false,
     showCrypto: false,
     showStock: false,
+    showAuto: false,
+    showSmile: false,
   };
   investmentHandler = () => {
     this.setState((prevState) => {
@@ -80,6 +82,17 @@ export default class investment extends Component {
     });
   };
 
+  showAutomobileDown = () => {
+    this.setState((prevState) => {
+      return { ...prevState, showAuto: !prevState.showAuto };
+    });
+  };
+  showSmileDown = () => {
+    this.setState((prevState) => {
+      return { ...prevState, showSmile: !prevState.showSmile };
+    });
+  };
+
   render() {
     return (
       <div className='InvestmentPage'>
@@ -99,6 +112,8 @@ export default class investment extends Component {
           showRealEstateDown={this.showRealEstateDown}
           showCryptoDowm={this.showCryptoDowm}
           showStockDowm={this.showStockDowm}
+          showAutomobileDown={this.showAutomobileDown}
+          showSmileDown={this.showSmileDown}
           {...this.state}
         ></InvestComp>
       </div>
