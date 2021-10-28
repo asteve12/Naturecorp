@@ -34,7 +34,18 @@
 
 @media (max-width: 450px) {
   .footerComponent {
-    padding: 10px;
+    padding: 20px;
     font-size: 17px;
+    text-align: left;
+  }
+  .followText {
+    text-align: center;
+    margin-top: 30px !important;
+  }
+  .footerCopyRight {
+    text-align: center;
+  }
+  .breakerCont {
+    display: none;
   }
 }

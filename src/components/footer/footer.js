@@ -17,12 +17,15 @@ function footer() {
         order to solely satisfy them we have worked with several individual to
         secure a spot in our marketplace
       </p>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div className='breakerCont'>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+      </div>
+
       <div className='followSection'>
-        <p>Follow us </p>
+        <p className='followText'>Follow us </p>
         <div className='IconsContainer'>
           <a href='#' className='IconWrapper'>
             <AiOutlineTwitter></AiOutlineTwitter>
@@ -40,7 +43,7 @@ function footer() {
 
         <br></br>
         <br></br>
-        <p>Copyright © 2021 Naturecorp</p>
+        <p className='footerCopyRight'>Copyright © 2021 Naturecorp</p>
       </div>
     </div>
   );
