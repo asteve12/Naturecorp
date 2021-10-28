@@ -552,15 +552,16 @@
   .cryptoTextBtn {
     display: block;
     text-align: left;
-    background-color: white;
+    background-color: black;
 
     outline: none;
     text-decoration: none;
-    color: black;
+    color: white;
     width: 50px;
     border-radius: 10px;
     text-align: center;
     border: none;
+    padding: 3px;
   }
   .stockBox {
     display: none;
