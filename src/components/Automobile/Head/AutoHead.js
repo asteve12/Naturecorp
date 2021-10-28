@@ -24,9 +24,9 @@ function AutoHead(props) {
             <CgMenu className='menuIcon'></CgMenu>
             {/* <CgMenuRight className='menuHover'></CgMenuRight> */}
           </button>
-
+          {/* 
           <br></br>
-          <br></br>
+          <br></br> */}
           {/* <button className='sideBtn' onClick={changeDropDown}>
             <span>
               <CgMenuRight className='menuHover'></CgMenuRight>

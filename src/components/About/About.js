@@ -11,9 +11,15 @@ function About() {
           <div className='AboutText'>
             <p className='AboutBorder'></p>
             <p className='welcomeText'>WELCOME TO</p>
-            <br></br>
+            <div className='brkCont'>
+              <br></br>
+            </div>
+
             <p> NATURE-CORP INTERNATIONAL</p>
-            <br></br>
+            <div className='brkCont'>
+              <br></br>
+            </div>
+
             <p className='AboutInfo'>
               Top Ranking investment conglomerate iconified with NYSE integrity
               for best choice investment in ROI, Simplicity, growth and

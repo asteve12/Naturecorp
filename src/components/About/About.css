@@ -116,4 +116,7 @@
   .AboutText p {
     font-size: 15px;
   }
+  .brkCont {
+    display: none;
+  }
 }

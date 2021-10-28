@@ -35,7 +35,7 @@
 @media (max-width: 450px) {
   .footerComponent {
     padding: 20px;
-    font-size: 17px;
+    font-size: 12px;
   }
   .followText {
     text-align: center;
@@ -46,5 +46,8 @@
   }
   .breakerCont {
     display: none;
+  }
+  .IconWrapper {
+    background-color: transparent;
   }
 }
