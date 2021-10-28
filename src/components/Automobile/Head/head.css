@@ -13,6 +13,14 @@
   width: 60%;
   justify-content: space-between;
 }
+.autoSidebtn {
+  width: 100px;
+  /* border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px; */
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 100%;
+}
 .AutoHeadContent p {
   font-size: 21px;
 }
