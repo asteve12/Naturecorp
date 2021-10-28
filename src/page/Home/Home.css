@@ -209,11 +209,29 @@
   }
 }
 @media (max-width: 550px) {
+  .closeCross {
+    color: white !important;
+  }
+  .closeDropDown {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+  }
   .MenuContainer {
     padding-top: 30px;
+    color: white;
   }
   .DropDown {
     padding-top: 0px;
+    width: 100%;
+    position: fixed;
+    background-color: grey;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .TextContainer h1 {
     font-size: 50px !important;
@@ -230,7 +248,7 @@
   }
   .mobileItems a {
     text-decoration: none;
-    color: grey;
+    color: white;
   }
   .ServiceText {
     display: none;

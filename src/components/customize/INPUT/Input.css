@@ -11,3 +11,9 @@
   box-sizing: border-box;
   padding: 10px;
 }
+
+@media (max-width: 450px) {
+  .AutoLabel {
+    font-size: 15px;
+  }
+}

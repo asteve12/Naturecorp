@@ -18,8 +18,73 @@
   color: grey;
 }
 
-/* @media (max-width: 550px) {
-  .MenuContainer h5 {
+@media (max-width: 550px) {
+  /* .MenuContainer h5 {
     display: none !important;
+  } */
+  .menuDropIcon {
+    font-size: 30px;
   }
-} */
+  .AutoService {
+    color: white !important;
+    text-decoration: none;
+  }
+  .mobileItems a {
+    width: 100px;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+    background-color: black;
+    margin: 10px;
+    color: white !important;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .menuServiceResponsive {
+    width: auto;
+    height: auto;
+    padding: 3%;
+    text-align: center;
+    background-color: black;
+    margin: 10px;
+    color: white !important;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .MenuItems {
+    width: auto;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    background-color: black;
+    margin: 10px;
+    color: white !important;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+  }
+  .showServiceDropDown {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    background-color: black;
+    margin: 10px;
+    color: white !important;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .menuService {
+    display: none;
+  }
+}
+
+@media (min-width: 550px) {
+  .menuServiceResponsive {
+    display: none;
+  }
+}

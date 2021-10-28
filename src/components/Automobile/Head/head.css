@@ -4,6 +4,8 @@
 
   display: flex;
   justify-content: flex-end;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 .AutoHeadContent {
   display: flex;
@@ -12,6 +14,7 @@
 
   width: 60%;
   justify-content: space-between;
+  padding-right: 10px;
 }
 .autoSidebtn {
   min-width: 15%;
@@ -46,29 +49,87 @@
 @media (max-width: 800px) {
   .AutoHeadContent {
     width: 100%;
+    padding: 10px;
   }
 }
+.AutoHead {
+  padding: 0px;
+}
 @media (max-width: 500px) {
+  .ResponsiveLink a {
+    width: 100px;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+    background-color: black;
+    margin: 10px;
+    color: white !important;
+    border-radius: 10px;
+    display: block;
+  }
+  .showDropDown {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .closeDropDown {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+  }
+  .autoSidebtn {
+    height: 50px;
+    padding: 5px;
+  }
+  .menuIcon {
+    font-size: 15px !important;
+  }
+
+  .AutoHead {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
   .PagesLink {
     display: none;
   }
+  .CustomizeHeader {
+    font-size: 15px !important;
+  }
+  .AutoHeadContent {
+    padding-right: 10px;
+    padding-left: 0px;
+  }
+  .pageDetail p {
+    text-align: center;
+    font-size: 10px;
+    width: 80%;
+  }
+
   .responsiveMenuIcons {
-    width: 150px;
+    width: 100px;
 
     height: auto;
     position: relative;
   }
+  .AutoHeadContent p {
+    font-size: 15px;
+  }
+
   .ResponsiveLink {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
+    background-color: grey;
+    opacity: 0.9;
     width: 100%;
-    height: 50vh;
-    background-color: white;
-    z-index: 1000;
+    height: 100vh;
+
+    z-index: 2000;
     top: 0px;
     align-items: center;
     padding-top: 30px;
+    bottom: 0px;
   }
   .ResponsiveLink a {
     text-decoration: none;

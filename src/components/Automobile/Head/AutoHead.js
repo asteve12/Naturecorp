@@ -18,7 +18,7 @@ function AutoHead(props) {
   return (
     <div className='AutoHead'>
       <div className='AutoHeadContent'>
-        <p>NATURE CORP </p>
+        <p className='AutoCompanyName'>NATURE CORP </p>
         <div className='responsiveMenuIcons'>
           <button className='autoSidebtn' onClick={changeDropDown}>
             <CgMenu className='menuIcon'></CgMenu>
@@ -42,6 +42,9 @@ function AutoHead(props) {
                 : 'ResponsiveLink   removeDropDown'
             }
           >
+            <div className='closeDropDown' onClick={changeDropDown}>
+              <GrFormClose></GrFormClose>
+            </div>
             <Link to='/'>HOME</Link>
 
             <a href=''>ABOUT</a>

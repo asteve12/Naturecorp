@@ -1,6 +1,6 @@
 .AutoClassCont {
   height: 321px;
-  width: 200px;
+  width: 300px;
 
   border: solid 4px #000000;
 
@@ -9,6 +9,7 @@
   padding-left: 1%;
   padding-right: 1%;
   margin: 1%;
+  margin-bottom: 20px;
 }
 
 .carsImage {
@@ -57,4 +58,9 @@
 }
 .priceLetter {
   font-size: 10px;
+}
+@media (max-width: 300px) {
+  .AutoClassCont {
+    width: 100%;
+  }
 }

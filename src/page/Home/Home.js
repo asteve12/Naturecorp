@@ -99,6 +99,7 @@ export default class Home extends Component {
     showService: false,
     textIndex: 0,
     imageText: 'AUTOMOBILE',
+    showServiceMenu: false,
   };
   ServiceClickHandler = () => {
     this.setState((prevState) => {
@@ -127,6 +128,15 @@ export default class Home extends Component {
           textIndex: prevState.textIndex + 1,
         };
       }
+    });
+  };
+
+  showServiceMenuHandler = () => {
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        showServiceMenu: !prevState.showServiceMenu,
+      };
     });
   };
 
@@ -212,10 +222,13 @@ export default class Home extends Component {
 
           <div className={this.state.showService ? 'DropDown' : 'DropDownHide'}>
             <div className='closeDropDown' onClick={this.ServiceClickHandler}>
-              <GrFormClose></GrFormClose>
+              <GrFormClose className='closeCross'></GrFormClose>
             </div>
 
-            <Menu></Menu>
+            <Menu
+              showServiceMenuHandler={this.showServiceMenuHandler}
+              {...this.state}
+            ></Menu>
           </div>
 
           {/* <div className='TextContainer'>
