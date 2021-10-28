@@ -422,9 +422,11 @@
     height: 200px;
   }
 } */
+
 @media (max-width: 850px) {
   .Automobile {
     width: 100%;
+    /* height: 300px; */
   }
   .smileImg {
     width: 100%;
@@ -452,7 +454,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
   .helpingMobileText {
     font-size: 15px;
     position: absolute;
@@ -883,7 +885,7 @@
   }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 850px) {
   .smileTextResponsive,
   .investHouseTextResponsive,
   .carTextResponsive {
@@ -901,5 +903,17 @@
   }
   .AboutTextResponsive {
     display: none;
+  }
+}
+
+@media (min-width: 350px) {
+  .InvestHouseResponsive {
+    height: 350px;
+  }
+}
+
+@media (min-width: 500px) {
+  .InvestHouseResponsive {
+    height: 500px;
   }
 }
