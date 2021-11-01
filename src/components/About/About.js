@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 //styles
 import './About.css';
 import aboutBgImg from '../../assets/about/aboutsm.png';
 
-function About() {
+function About(props) {
+  const AbtContainer = useRef();
+  useEffect(() => {
+    {
+      // AbtConainer.current;
+      if (props.bringAboutToView) {
+        AbtContainer.current.scrollIntoView({ behavior: 'smooth' });
+        props.bringAboutToViewHandler(false);
+      }
+    }
+  }, [props.bringAboutToView]);
   return (
-    <div>
+    <div ref={AbtContainer}>
       <div className='AboutSection'>
         <div className='AboutWrapper'>
           <div className='AboutText'>

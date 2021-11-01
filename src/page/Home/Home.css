@@ -65,7 +65,9 @@
   padding-bottom: 5px;
 }
 .sideBtn {
-  min-width: 15%;
+  /* min-width: 15%; */
+  width: auto;
+  padding-right: 10px !important;
   height: 89px;
   background-color: white;
   border-top-right-radius: 50px;
@@ -78,7 +80,7 @@
   padding-left: 12px;
   cursor: pointer;
   color: grey;
-  transition: all 2s ease-in-out;
+  /* transition: all 2s ease-in-out; */
 }
 .sideBtn:hover .menuHover {
   display: none;
@@ -89,7 +91,7 @@
 
 .sideBtn:hover .menuReal {
   display: block;
-  transition: all 2s linear;
+  /* transition: all 2s linear; */
 }
 
 .menuHover,
@@ -97,7 +99,7 @@
   font-size: 30px;
   margin-right: 28px;
   color: grey;
-  transition: all 2s linear;
+  /* transition: all 2s linear; */
 }
 .DropDown {
   position: absolute;
@@ -254,7 +256,12 @@
     display: none;
   }
   .sideBtn {
-    width: 50px;
+    width: 30px;
+    height: 50px;
+    padding-left: 3px;
+  }
+  .menuHover {
+    font-size: 15px;
   }
   .wrapper {
     /* display: flex; */
@@ -275,6 +282,9 @@
   }
 }
 @media (max-width: 300px) {
+  .sideBtn {
+    height: 50px;
+  }
   .TextContainer h1 {
     font-size: 30px !important;
   }

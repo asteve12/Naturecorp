@@ -58,11 +58,11 @@ function AutoSlider(props) {
             <img src={data[3]} />
           </div>
         </div>
-        <div className='each-fade-auto'>
+        {/* <div className='each-fade-auto'>
           <div>
             <img src={data[4]} />
           </div>
-        </div>
+        </div> */}
       </Fade>
       <div className='pageDetail'>
         <h1>All Our Cars</h1>

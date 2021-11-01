@@ -18,6 +18,7 @@ import { GrFormClose } from 'react-icons/gr';
 import Menu from './menu/menu';
 import Investment from '../investment/investment';
 import { Link } from 'react-router-dom';
+import Terms from './terms/terms';
 
 //context
 import HomeContext from './context';
@@ -100,6 +101,8 @@ export default class Home extends Component {
     textIndex: 0,
     imageText: 'AUTOMOBILE',
     showServiceMenu: false,
+    bringAboutToView: false,
+    showTermsDetail: false,
   };
   ServiceClickHandler = () => {
     this.setState((prevState) => {
@@ -180,6 +183,26 @@ export default class Home extends Component {
   //     });
   // };
 
+  bringAboutToViewHandler = (value) => {
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        bringAboutToView: value,
+      };
+    });
+  };
+
+  showTermsDetailsHandler = (e) => {
+    e.preventDefault();
+
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        showTermsDetail: !prevState.showTermsDetail,
+      };
+    });
+  };
+
   render() {
     return (
       <HomeContext.Provider
@@ -210,10 +233,11 @@ export default class Home extends Component {
                   <p>HOME</p>
                 </a>
               </Link>
-              <a href=''>
+              <Link to='/' onClick={() => this.bringAboutToViewHandler(true)}>
                 <p>ABOUT</p>
-              </a>
-              <a href=''>
+              </Link>
+
+              <a href='' onClick={this.showTermsDetailsHandler}>
                 <p>TERMS</p>
               </a>
             </div>
@@ -231,9 +255,7 @@ export default class Home extends Component {
             ></Menu>
           </div>
 
-          {/* <div className='TextContainer'>
-            <h1>{this.state.imageText}</h1>
-          </div> */}
+          {/**/}
           {/* <ImageGallery
             items={images}
             // defaultImage={defaultImage}
@@ -256,6 +278,9 @@ export default class Home extends Component {
           ></SwiftSlider> */}
 
           <div classNam='sliderWrapperHome'>
+            <div className='TextContainer'>
+              <h1>{this.state.imageText}</h1>
+            </div>
             <Fade onChange={this.textChangeHandler} duration={1000}>
               <div className='each-fade'>
                 <div>
@@ -305,9 +330,18 @@ export default class Home extends Component {
             </Slider>
           </div> */}
         </div>
-        <About></About>
+        <About
+          {...this.state}
+          bringAboutToViewHandler={this.bringAboutToViewHandler}
+        ></About>
         <Investment></Investment>
         <Footer></Footer>
+        {this.state.showTermsDetail ? (
+          <Terms
+            showTermsDetailsHandler={this.showTermsDetailsHandler}
+            {...this.state}
+          ></Terms>
+        ) : null}
       </HomeContext.Provider>
     );
   }

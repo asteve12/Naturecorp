@@ -1,0 +1,165 @@
+.termContainer {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  background-color: white;
+
+  top: 0px;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.menuTerms {
+  color: white;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  /* justify-content: flex-end; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  align-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.sideBtnTerms {
+  /* min-width: 15%; */
+  width: auto;
+  padding-right: 10px !important;
+  /* height: 89px; */
+  background-color: white;
+  /* border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px; */
+  outline: none;
+  border: none;
+  /* box-shadow: 0px 3px 6px #00000029; */
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  cursor: pointer;
+  color: #357106;
+  /* transition: all 2s ease-in-out; */
+}
+.menuHoverTerms,
+.menuRealTerms {
+  font-size: 20px;
+
+  margin-right: 10px;
+  color: #357106;
+  /* transition: all 2s linear; */
+}
+
+.menuItemsWrapperTerms {
+  position: absolute;
+  display: flex;
+  right: 0%;
+  justify-content: space-around;
+
+  width: 60%;
+}
+
+.menuItemsWrapperTerms h1 {
+  font-size: 20px;
+}
+.menuItemsWrapperTerms a {
+  text-decoration: none;
+  color: #357106;
+}
+.menuItemsWrapperTerms p {
+  font-size: 12px;
+}
+
+.termsContentContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.termsContentContainer section.bar {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #357106;
+}
+.termsWhiteBar {
+  height: 20%;
+  width: 100%;
+  background-color: white;
+}
+.termsGreenBar {
+  height: 60%;
+  width: 100%;
+  background-color: #357106;
+}
+.termsContentContainer section.content {
+  width: 90%;
+  height: 100%;
+}
+.termsFooter {
+  border-top: 8px solid #357106;
+  height: auto;
+  width: 100%;
+}
+.termsFooterIcons {
+  background-color: #357106;
+  height: 48px;
+  width: 48px;
+  border-radius: 48px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+.termFooterTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.termsFooterLogoWrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+.termFooterBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
+  padding: 1%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.termFooterBottom p,
+.termFooterTop p {
+  color: #357106;
+}
+.content {
+  padding: 3%;
+  box-sizing: border-box;
+  color: #357106;
+}
+.termsListedSection {
+  list-style-type: none;
+  margin-left: 10%;
+}
+.termsListedSection li {
+  margin-top: 5%;
+}
+.termCloseBtn {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+  border: none;
+  color: #357106;
+}
+.btnTermClose {
+  font-size: 20px;
+  color: #357106;
+}
