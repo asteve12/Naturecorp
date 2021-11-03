@@ -163,3 +163,9 @@
   font-size: 20px;
   color: #357106;
 }
+
+@media (max-width: 500px) {
+  .termContainer {
+    display: none;
+  }
+}
